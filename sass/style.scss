@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+
 $primary: #0d6efd;
 $secondary: #6c757d;
-$purple: purple;
+$purple: purple; // nuevo color integrado al theme
+$font-family-base: "Merriweather", serif; //Cambio de tipografía
 
 $theme-colors: (
   "primary": $primary,
@@ -9,3 +12,8 @@ $theme-colors: (
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.card-purple {
+  @extend .card;
+  background-color: $purple;
+}
